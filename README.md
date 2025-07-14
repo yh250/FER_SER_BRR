@@ -70,7 +70,13 @@ This mode is designed for automated processing of a single video file, providing
 * **Output:**
     * **JSON File:** A single JSON file containing the overall authenticity result (Yes/No), average authenticity score, risk score, and other metadata for the entire video.
     * **Console Output:** Provides status messages and debug information (if enabled).
-* **Usage:** Run `python analyze_video.py "path/to/your/video.mp4" --output_json "results.json"` from your terminal.
+* **Usage:** from your terminal Run
+   ```bash
+   python analyze_video.py "path/to/your/video.mp4" --output_json "results.json"
+    ```
+   * Replace `"path/to/your/video.mp4"` with the actual path to your video file.
+    * Replace `"path/to/your/output_json_folder"` with the directory where the analysis results (in JSON format) will be saved. Ensure this directory exists or the script has permission to create it.
+
 
 #### Configuration for Batch Analysis Mode (`config.py`):
 
